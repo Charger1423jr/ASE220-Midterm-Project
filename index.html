@@ -8,7 +8,6 @@
 
     <style>
         .navbar-brand {
-            font-family: 'Garamond', cursive;
             color: #000050;
             font-size: 30px;
         }
@@ -24,20 +23,20 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Notepad Online</a>
+        <a class="navbar-brand" href="index.html">Notepad Online</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Page</a>
+                    <a class="nav-link" href="aboutPage.html">About Page</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- --------------------------------------------------------------------- !-->
+<!-- ------------------------------------------------------------------- !-->
     <aside>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -46,7 +45,8 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="btn btn-danger" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-delete" type="button" role="tab" aria-controls="pills-delete" aria-selected="false">Delete All</button>
+                <button class="btn btn-danger" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-delete" type="button" role="tab" aria-controls="pills-delete" aria-selected="false" onclick="deleteAllCards()">Delete All</button>
+
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -58,7 +58,7 @@
         <hr>
     </aside>
 <!-- --------------------------------------------------------------------- !-->
-    <artcle>
+    <article>
         <!-- Modal !-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -69,22 +69,34 @@
                     </div>
                     <div class="modal-body">
                         <form>
-                            <span class="input-group-text" id="inputGroup-sizing-sm">Enter Notes</span>
-                            <input type="text" class=" form-control" aria-describedby="inputGroup-sizing-sm">
+                            <textarea class="form-control" id="noteTitle" rows="1" placeholder="Enter Note Title"></textarea>
                         </form>
-                    </div>
+                        <hr>
+                        <form>
+                            <textarea class="form-control" id="noteBody" rows="3" placeholder="Enter Note Body"></textarea>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <input type="button" class="saveButton btn btn-primary" value="Save" onclick="saveNote()">
+
+
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- End of Modal !-->
-        
-    </artcle>
+
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Welcome to Notepad Online</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">The Free Daily Note Manager</h6>
+                <p class="card-text">Click on "Create New" to make a new Note.</p>
+            </div>
+        </div>
+    </article>
 
 <script src="notepagejs.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
