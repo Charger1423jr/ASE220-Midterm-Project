@@ -1,0 +1,7 @@
+How NotePad Online Works:
+
+  NotePad Online is an online "Sticky Note" styled webpage used to keep track of daily notes the user wishes to add.
+  This is designed to help organization and to be useful for the unorganized.
+  Juat click "Create New", enter a Title and the body of the note. Hit save and the data will be posted on the main page.
+  If you want to clear a note, just hit "Delete" and it will remove that note. IF you want to clear all of them, hit "Delete all" at the top of the page.
+  To Find out more, head over to our "About Page".
