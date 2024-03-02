@@ -5,4 +5,3 @@ Preston Jackson - Work Completed:
 
 Work to Be Completed:
   Create About Page
-  Make JSON save the data on click
